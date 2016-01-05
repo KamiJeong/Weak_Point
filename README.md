@@ -12,5 +12,13 @@ mybatis-config.xml Setting
 
 mapper...Setting
 
+# Angular JS
 
+service... ex) this.createExample = function(employee){ return $http.get() }
 
+Must Input this code for material design lite 
+// javascript code for material design lite
+        angular.element(document).ready(
+            function () {
+                componentHandler.upgradeAllRegistered();
+            });
