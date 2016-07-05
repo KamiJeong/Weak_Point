@@ -1,6 +1,9 @@
 # Regular Expressions
 http://pupustory.tistory.com/132
 
+# Java 
+If use Same Object type List, Can add List without overlap when i use hash array....
+
 # Spring Framework Setting
 
 web.xml Setting
