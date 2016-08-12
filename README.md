@@ -1,6 +1,27 @@
 # Regular Expressions
 http://pupustory.tistory.com/132
 
+# Encoding Problem...
+
+- check eclipse project encoding...
+
+- if get type is problem, check tomcat server.xml 
+<Connector connectionTimeout="20000" port="8980" protocol="HTTP/1.1" redirectPort="8443" URIEncoding="UTF-8"/>
+<Connector port="8909" protocol="AJP/1.3" redirectPort="8443" URIEncoding="UTF-8"/>
+- if post type is problem, check web.xml
+|<filter>
+|  <filter-name>encodingFilter</filter-name>
+|  <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+|  <init-param>
+|    <param-name>encoding</param-name>
+|    <param-value>utf-8</param-value>
+|  </init-param>
+|</filter>
+|<filter-mapping>
+|  <filter-name>encodingFilter</filter-name>
+|  <url-pattern>*.do</url-pattern>
+|</filter-mapping>
+
 # Java 
 If use Same Object type List, Can add List without overlap when i use hash array....
 
