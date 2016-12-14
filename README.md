@@ -49,3 +49,48 @@ Must Input this code for material design lite
             function () {
                 componentHandler.upgradeAllRegistered();
             });
+
+# Google Analytics
+
+@ Page Tracking
+ga('send', {
+  hitType: 'pageview',
+  page: location.pathname
+});
+
+@ Event Tracking
+ga('send', {
+  hitType: 'event',
+  eventCategory: 'Videos',
+  eventAction: 'play',
+  eventLabel: 'Fall Campaign'
+});
+
+@ Social Tracking
+ga('send', {
+  hitType: 'social',
+  socialNetwork: 'Facebook',
+  socialAction: 'like',
+  socialTarget: 'http://myownpersonaldomain.com'
+});
+
+@ Screenview Tracking
+ga('send', 'screenview', {
+  'appName': 'myAppName',
+  'screenName': 'Home'
+});
+
+@ User Timings Tracking
+ga('send', {
+  hitType: 'timing',
+  timingCategory: 'JS Dependencies',
+  timingVar: 'load',
+  timingValue: 3549
+});
+
+@ Exception Tracking
+ga('send', 'exception', {
+  'exDescription' : err.message,
+  'exFatal' : false
+});
+
